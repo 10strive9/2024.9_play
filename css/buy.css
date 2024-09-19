@@ -1,0 +1,97 @@
+  @charset "utf-8";
+  .container {
+            max-width: 800px;
+            margin: 40px auto;
+            /* background-color: white; */
+				background: linear-gradient(135deg, #ffffff, #e39700); 
+            border-radius: 10px;
+            box-shadow: 0 4px 20px rgba(0, 0, 0, 0.5);
+            overflow: hidden;
+        }
+
+        .tabs {
+            display: flex;
+            background-color: #f8a57b;
+            color: white;
+        }
+
+        .tab {
+            flex: 1;
+            padding: 15px;
+            text-align: center;
+            cursor: pointer;
+            transition: background-color 0.3s;
+        }
+
+        .tab:hover {
+            background-color: #ffaa00;
+			font-size: 17px;
+        }
+
+        .tab.active {
+            background-color: #c18100;
+            font-weight: bold;
+			font-size: 17px;
+            border-bottom: 3px solid #004085;
+        }
+
+        .section {
+            display: none;
+            padding: 20px;
+        }
+
+        .section.active {
+            display: block;
+        }
+
+        .details dt {
+            font-weight: bold;
+            color: #333;
+            margin: 10px 0 5px;
+        }
+
+        .details dd {
+            margin: 0 0 15px 0;
+            color: #555;
+        }
+
+        .items {
+            border-top: 1px solid #ddd;
+            padding-top: 10px;
+        }
+
+        .item {
+            display: flex;
+            justify-content: space-between;
+            margin-bottom: 10px;
+            padding: 10px 0;
+        }
+
+        .item div {
+            color: #555;
+        }
+
+        .total {
+            font-weight: bold;
+            margin-top: 10px;
+            text-align: right;
+            color: #333;
+        }
+		
+
+		
+		#small-1 img{
+			float: right;
+			width: 300px;
+			height: 180px;
+			margin-right: 50px;
+			border: #c18100;
+			border-radius: 15px;
+		}
+		
+		  .footer {
+		            text-align: center;
+		            margin-top: 20px;
+		            font-size: 14px;
+		            color: #666;
+		        }

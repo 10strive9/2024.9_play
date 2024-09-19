@@ -1,0 +1,326 @@
+<!DOCTYPE html>
+<html lang="zh-">
+	<head>
+		<meta charset="UTF-8">
+		<title>机票预订--旅游网站</title>
+		<link rel="stylesheet" href="css/column_cyt.css">
+		<link rel="stylesheet" href="css/basic.css">
+
+	</head>
+	<body>
+		<header>
+			<nav id="nav">
+			<div id="logo"><img src="img/logo.png" alt=""></div> 
+			<span id="lonad">
+			    <span class="lonad" ><a href="user-login.html">登录 注册</a></span>
+			</span>
+			<ul>
+				<li><a href="index.html">首页</a></li>
+				<li><a href="informations.html">旅游资讯</a></li>
+						<li class="active"><a href="ticket.html">机票订购</a></li>
+							<li><a href="about.html">酒店查询</a></li>
+							<li ><a href="scenery.html">美食鉴赏</a></li>
+							<li><a href="buy.html">我的订单</a></li>
+			</ul>
+			</nav>
+		</header>
+		
+		<div id="headline">
+			<div class="headline">
+				<hgroup>
+					<h2>机票订购</h2>
+					<p>山西与各地的往返机票订购</p>
+				</hgroup>
+			</div>
+		</div>
+		<div id="container">
+			<article class="list ticket">
+				<form action="">
+					<h2>机票预订</h2>
+					<div class="type"><span>航班类型</span>
+						<input type="radio" name="radio" value="单程">单程
+						<input type="radio" name="radio" value="往返">往返
+					</div>
+					<div class="form left">
+						<p>
+							<lable for="from_city">出发城市</lable>
+							<select style="width:200px ">
+
+								<option>请选择</option>
+								<option>太原市</option>
+								<option>大同市</option>
+								<option>朔州市</option>
+								<option>忻州市</option>
+								<option>阳泉市</option>
+								<option>吕梁市</option>
+								<option>晋中市</option>
+								<option>长治市</option>
+								<option>晋城市</option>
+								<option>临汾市</option>
+								<option>运城市</option>
+								<option>上海市</option>
+								<option>北京市</option>
+								<option>天津市</option>
+								<option>西安市</option>
+								<option>厦门市</option>
+								<option>武汉市</option>
+							</select>
+						</p>
+						<p>
+							<lable>返回城市</lable>
+							<select style="width:200px ">
+
+								<option>请选择</option>
+								<option>太原市</option>
+								<option>大同市</option>
+								<option>朔州市</option>
+								<option>忻州市</option>
+								<option>阳泉市</option>
+								<option>吕梁市</option>
+								<option>晋中市</option>
+								<option>长治市</option>
+								<option>晋城市</option>
+								<option>临汾市</option>
+								<option>运城市</option>
+							</select>
+						</p>
+					</div>
+					<div class="form center">
+						<p>
+							<lable>出发时间</lable>
+							<input type="date" placeholder="时间/日期">
+						</p>
+						<p>
+							<lable>返回时间</lable>
+							<input type="date" placeholder="时间/日期">
+						</p>
+					</div>
+					<div class="form right">
+						<a href="链接.html"><button type="button" class="submit">订票</button></a>
+
+					</div>
+
+
+				</form>
+				<div class="list_news">
+					<h2>热门路线</h2>
+					<ul>
+						<li>购票方式：</li>
+						<li class="idli"><a class="idtop" href="###" onclick="style1()"checked="checked">飞机票</a></li>
+						<li class="idli"><a class="idtop" href="###" onclick="style2()">火车票</a></li>
+						<li class="idli"><a class="idtop" href="###" onclick="style3()">汽车票</a></li>
+					</ul>
+
+					<table>
+						<thead>
+							<tr>
+								<th>路线</th>
+								<th>日期</th>
+								<th>价格</th>
+								<th>税费</th>
+								<th>餐食</th>
+								<th>航班</th>
+								<th>预定</th>
+							</tr>
+						</thead>
+						<tbody>
+							<tr>
+								<td>太原-北京</td>
+								<td>9-21</td>
+								<td class="price">¥300起</td>
+								<td>¥50</td>
+								<td>有</td>
+								<td>国航CA1138</td>
+								<td><a href="链接.html" class="reserve">预定</a>
+								</td>
+							</tr>
+							<tr>
+								<td>太原-青岛</td>
+								<td>9-21</td>
+								<td class="price">¥185起</td>
+								<td>¥45</td>
+								<td>无</td>
+								<td>苏南瑞丽航空</td>
+								<td><a href="链接.html" class="reserve">预定</a>
+								</td>
+							</tr>
+							<tr>
+								<td>太原-上海</td>
+								<td>9-21</td>
+								<td class="price">¥240起</td>
+								<td>¥52</td>
+								<td>有</td>
+								<td>春秋9C8734</td>
+								<td><a href="链接.html" class="reserve">预定</a>
+								</td>
+							</tr>
+							<tr>
+								<td>大同-广州</td>
+								<td>9-21</td>
+								<td class="price">¥378起</td>
+								<td>¥36</td>
+								<td>无</td>
+								<td>东航</td>
+								<td><a href="链接.html" class="reserve">预定</a>
+								</td>
+							</tr>
+							<tr>
+								<td>大同-深圳</td>
+								<td>9-21</td>
+								<td class="price">¥680起</td>
+								<td>¥44</td>
+								<td>有</td>
+								<td>东航MU6305</td>
+								<td><a href="链接.html" class="reserve">预定</a>
+								</td>
+							</tr>
+							<tr>
+								<td>太原-杭州</td>
+								<td>9-21</td>
+								<td class="price">¥328起</td>
+								<td>¥62</td>
+								<td>有</td>
+								<td>山航SC4931</td>
+								<td><a href="链接.html" class="reserve">预定</a>
+								</td>
+							</tr>
+							<tr>
+								<td>太原-成都</td>
+								<td>9-21</td>
+								<td class="price">¥300起</td>
+								<td>¥35</td>
+								<td>无</td>
+								<td>国航CA2704</td>
+								<td><a href="链接.html" class="reserve">预定</a>
+								</td>
+							</tr>
+							<tr>
+								<td>太原-昆明</td>
+								<td>9-21</td>
+								<td class="price">¥893起</td>
+								<td>¥73</td>
+								<td>有</td>
+								<td>东航MU5145</td>
+								<td><a href="链接.html" class="reserve">预定</a>
+								</td>
+							</tr>
+							<tr>
+								<td>五台山-武汉</td>
+								<td>9-21</td>
+								<td class="price">¥250起</td>
+								<td>¥46</td>
+								<td>无</td>
+								<td>东航MU6175</td>
+								<td><a href="链接.html" class="reserve">预定</a>
+								</td>
+							</tr>
+						</tbody>
+						<tfoot>
+							<tr>
+								<td colspan="7"><a href="#" class="ticket_more">加载更多航班...</a>
+								</td>
+							</tr>
+						</tfoot>
+					</table>
+
+
+				</div>
+			</article>
+			<aside class="sidebar">
+				<div class="recommend sidebox">
+					<h3>景点推荐</h3>
+					<div class="tag">
+						<ul>
+							<li><a href="https://baike.so.com/doc/2743870-2895902.html">云冈石窟</a></li>
+							<li><a href="https://baike.so.com/doc/2137950-2262075.html">太行山大峡谷</a></li>
+							<li><a href="https://baike.so.com/doc/3058390-3223830.html">五台山</a></li>
+							<li><a href="https://baike.so.com/doc/5346214-5581661.html">晋祠</a></li>
+							<li><a href="https://baike.so.com/doc/1181570-7114611.html">山西皇城相府</a></li>
+							<li><a href="https://baike.so.com/doc/1202489-1271960.html?from=244505&sid=1271960&redirect=search">洪洞大槐树</a></li>
+							<li><a href="https://baike.so.com/doc/5334917-5570355.html">藏山</a></li>
+							<li><a href="https://baike.so.com/doc/30521194-32395277.html">王家大院<a></li>
+							<li><a href="https://baike.so.com/doc/1123440-1188564.html">壶口瀑布</a></li>
+							<li><a href="https://baike.so.com/doc/5376890-5613017.html">乔家大院</a></li>
+							<li><a href="https://baike.so.com/doc/5352286-5587744.html">悬空寺</a></li>
+							<li><a href="https://baike.so.com/doc/2124315-32333502.html">雁门关</a></li>
+							<li><a href="https://baike.so.com/doc/1214741-1284961.html">禹王洞</a></li>
+							<li><a href="https://baike.so.com/doc/24056798-24639929.html?from=2873235&sid=24639929&redirect=search">张家口</a></li>
+							<li><a href="https://baike.so.com/doc/5387123-5623635.html">芦芽山</a></li>
+							<li><a href="https://baike.baidu.com/item/%E4%BD%9B%E5%AE%AB%E5%AF%BA%E9%87%8A%E8%BF%A6%E5%A1%94/1897433">佛宫寺释迦塔</a></li>
+							<li><a href="https://baike.so.com/doc/5354059-5589523.html">北固山</a></li>
+							<li><a href="https://baike.so.com/doc/5338227-5573666.html">鹳雀楼</a></li>
+							<li><a href="https://baike.so.com/doc/5854583-6067425.html?from=175231&sid=6067425&redirect=search">蒙山大佛</a></li>
+							<li><a href="https://baike.so.com/doc/5334440-5569878.html">关帝庙</a></li>
+							<li><a href="https://baike.so.com/doc/2441383-2580773.html">山西平遥古城</a></li>
+						</ul>
+					</div>
+				</div>
+				<div class="hot sidebox">
+					<h3>旅游美景</h3>
+					<div class="slider">
+					    <div class="slides">
+					        <div class="slide"><img src="img/1.png" alt="Image 1"></div>
+					        <div class="slide"><img src="img/2.png" alt="Image 2"></div>
+					        <div class="slide"><img src="img/3.png" alt="Image 3"></div>
+							<div class="slide"><img src="img/4.png" alt="Image 4"></div>
+							<div class="slide"><img src="img/5.jpg" alt="Image 5"></div>
+							<div class="slide"><img src="img/6.jpg" alt="Image 6"></div>
+					    </div>
+					</div>
+					
+					<script>
+					    const slides = document.querySelector('.slides');
+					    const slideCount = document.querySelectorAll('.slide').length;
+					    let currentIndex = 0;
+					
+					    function moveToNextSlide() {
+					        currentIndex = (currentIndex + 1) % slideCount;
+					        slides.style.transform = `translateX(-${currentIndex * 100}%)`;
+					    }
+					
+					    setInterval(moveToNextSlide, 3000); // 每3秒切换一次
+					</script>
+						
+				</div>
+				
+			</aside>
+		</div>
+
+<footer id="footer">
+	<div class="top">
+	<div class="block left">
+	<h3>合作伙伴</h3>
+	<hr>
+	<ul>
+		<li style=" color: #5F7075;">途牛旅游网</li>
+		<li style=" color: #5F7075;">去哪儿旅行网</li>
+		<li style=" color: #5F7075;">携程旅游</li>
+		<li style=" color: #5F7075;">高德地图</li>
+	</ul>
+
+	</div>
+	<div class="block middle">
+	<h3>旅游FAQ</h3>
+	<hr>
+	<ul>
+		<li><a href="https://baijiahao.baidu.com/s?id=1802998155565112554&wfr=spider&for=pc" style=" color: #5F7075;">山西旅游的最佳季节是什么时候</a></li>
+		<li><a href="https://baijiahao.baidu.com/s?id=1802998155565112554&wfr=spider&for=pc" style=" color: #5F7075;">山西有哪些必去的景点</a></li>
+		<li><a href="https://baijiahao.baidu.com/s?id=1806244929925303827&wfr=spider&for=pc" style=" color: #5F7075;">山西旅游注意事项</a></li>
+	</ul>
+	</div>
+	<div class="block right">
+	<h3>联系方式</h3>
+	<hr>
+	<ul>
+		<li style=" color: #5F7075;">微博：weibo.com/shanxilvyou</li>
+		<li style=" color: #5F7075;">邮件：2688889999@qq.com</li>
+		<li style=" color: #5F7075;">地址：山西省太原市尖草坪区</li>
+
+	</ul>
+	</div>
+	
+	</div>
+	<div class="bottom">Copyright © XUEHUA 山西旅游网| 晋ICP 备156759969 号| 旅行社经营许可证：L-14-12345</div>
+	</footer>
+	</body>
+</html>

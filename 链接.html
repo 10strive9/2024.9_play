@@ -1,0 +1,204 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>订购</title>
+  <style>
+    html,body {
+      width: 100%;
+      height: 100%;
+      margin: 0px;
+      background: #f7fcff;
+	  margin: 0;
+	  padding: 0;
+	  background:url(./img/1_20240913180531.jpg) no-repeat center;
+	  background-size: 100% 100%;
+    }
+    
+    #header{
+        width: 100%;
+        height: 60px;
+    }
+
+   .main{
+        
+        min-width: 540px;
+        height: 840px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+	@keyframes main{
+		0%{
+			background:url(./img/1_20240913180531.jpg);
+		}
+		50%
+		{
+			background:url(./img/2_20240913180531.jpg);
+		}
+		100%
+		{
+			background:url(./img/3_20240913182954.jpg);
+		}
+	}
+
+    #top{
+        width: 100%;
+        height: 50px;
+    }
+
+    #form-wrap{
+        width: 320px;
+        margin-bottom: 40px;
+    }
+
+    #title{
+        text-align: center;
+        font-size: 25px;
+        color: #333333;
+        margin-bottom: 35px;
+    }
+    .from_input{
+        width: 320px;
+        height: 40px;
+        margin-bottom: 25px;
+    }
+	.from_input1{
+	    width: 320px;
+	    height: 40px;
+	    margin-bottom: 25px;
+	}
+	.from_input1 input{
+	    width: 35px;
+	    height: 20px;
+		line-height:30px;
+	    margin-bottom: 25px;
+	}
+	
+
+    .from_input input{
+        width: 300px;
+        height: 40px;
+        border: 1px solid #ccc;
+        padding-left: 20px;
+    }
+
+    #validation{
+        width: 320px;
+        height: 40px;
+        display: flex;
+    }
+    #validation  input{
+        width: 160px;
+        height: 40px;
+        padding-left: 20px;
+        border: 1px solid #ccc;
+    }
+    
+
+    #readme{
+        width: 100%;
+        height: 40px;
+        display: flex;
+        align-items: center;
+        font-size: 12px;
+    }
+    #readme > input{
+        margin: 0px 10px 0px 0px;
+        cursor: pointer;
+    }
+    #readme > div{
+        color: #333333;
+        margin-right: 5px;
+    }
+    #readme > span{
+        margin-right: 5px;
+        color: #2395C9;
+        cursor: pointer;
+    }
+    #registered{
+        width: 320px;
+        height: 95px;
+        margin-top: 10px;
+    }
+    #registered > button{
+        width: 320px;
+        height: 45px;
+        background-color:  #337ab7;
+        color: #ffffff;
+        border: none;
+        font-size: 16px;
+        cursor: pointer;
+    }
+    #registered > div{
+        width: 100%;
+        line-height: 45px;
+        text-align: center;
+        color: #999999;
+        font-size: 12px;
+    }
+    #registered span{
+        color: #337ab7;
+        cursor: pointer;
+    }
+	a{
+		text-decoration:none;
+		color:white;
+	}
+	a:hover{
+		text-decoration:underline;
+		color:blue;
+	}
+	
+  </style>
+</head>
+<body>
+    <div id="header"></div>
+    <div class="main">
+        <div id="top"></div>
+        <div id="form-wrap">
+            <div id="title">欢迎使用购票系统</div>
+            <form action=""></form>
+            <div  class="from_input1">
+                <input type="radio" name="radio" value="一等票">一等票
+				 <input type="radio" name="radio" value="二等票">二等票
+				  <input type="radio" name="radio" value="商务舱等">商务票
+            </div>
+			
+			
+            <div class="from_input">
+                <input type="text" placeholder="姓名">
+            </div>
+            <div class="from_input">
+                <input type="text" placeholder="中国居民身份证">
+	
+            </div>
+			<div class="from_input">
+			    <input type="date" placeholder="日期">
+			</div>
+            <div id="validation">
+                <input type="text" placeholder="电话号码"> 
+				<select style="width:200px">
+					<option>成人票</option>
+					<option>学生票</option>
+					<option>残军票</option>
+					
+				</select>
+				
+            </div>
+            <div id="readme">
+                <input type="checkbox">
+                <div>阅读并同意</div>
+                <a href="#" color="#000079"><span><font color="red">新网用户协议</font></span></a>
+                <a href="#" color="#000079"><span><font color="red">客户信息收集声明</font></span></a>
+            </div>
+            <div id="registered">
+                <button><a href="二维码.html">提交订单</a></button>
+				
+                
+            </div>
+        </div>
+    </div>
+</body>
+</html>

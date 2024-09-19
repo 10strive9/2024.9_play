@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>订单信息</title>
+    <meta charset="utf-8" />
+    <style type="text/css">
+		body{
+			background-image:url("./山西旅行网/100.jpg") ;
+		}
+        .paymain{
+            width:600px;
+            height:350px;
+            margin:200px auto;
+            border-top-left-radius:20px;
+            border-top-right-radius:20px;
+            overflow:hidden;
+            border:2px solid black;
+        }
+        .paytop{
+            height:50px;
+            width:600px;
+            background:gold;
+            line-height:50px;
+            font-weight:bold;
+            padding-left:10px;
+            font-size:15px;
+        }
+        .paytop2{
+            width:500px;
+            height:30px;
+            line-height:30px;
+            font-weight:bold;
+            margin:0px auto;
+            margin-top:30px;
+            border-bottom:1px solid #C8DCDB;
+        }
+        .paytext{
+            width:500px;
+            display:flex;
+            margin:10px auto;
+        }
+        .paytext div:1{
+            width:100px;
+            text-align:right;
+        }
+        .paytext div:2{
+            width:500px;
+        }
+        .paytext1{
+            width:200px;
+        }
+        .paytext2{
+            width:300px;
+        }
+		.paysize{
+			height: 300px;
+			width:300px
+			margin-top:300px;
+			margin-left: auto;
+		}
+    </style>
+    <body>
+        <div class="paymain">
+            <div class="paytop">请完善订单信息</div>
+            <div class="paytop2">基本信息：</div>
+            <div class="paytext">
+                <div>姓名：</div>
+                <div><input type="text" name="userName" class="paytext1"/></div>
+            </div>
+            <div class="paytext">
+                <div>电话：</div>
+                <div><input type="text" name="userName" class="paytext1"/></div>
+            </div>
+            <div class="paytext">
+                <div>身份证号：</div>
+                <div><input type="text" name="userName" class="paytext2"/></div>
+            </div>
+            <div class="paytext">
+                <div>性别：</div>
+            <div>
+            <input type="radio" name="sex" value="女" checked/>女士
+            <input type="radio" name="sex" value="男" />先生
+            </div>
+            </div>
+            <div class="paytext">
+                <div>请选择支付方式：</div>
+                <div>
+                <select name="userType">
+                <option value="1">支付宝</option>
+                <option value="2" selected>微信</option>
+                <option value="3">工行卡</option>
+            </select>
+        </div>
+      </div>
+       <div class="paytext">
+        <div></div>
+        <div>
+          <a href="付款码.html"><input type="submit" value="确认订单" /></a>
+          &nbsp;&nbsp;&nbsp;
+          <a href="informations.html"><input type="reset" value="取消订单" /></a>
+        </div>
+      </div>
+            </div>
+        
+    </body>
+    

@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="zh-cn">
+	<head>
+		<meta charset="UTF-8">
+		<title>首页--旅游网站</title>
+		<link rel="stylesheet" href="css/style_wwy.css">
+		<link rel="stylesheet" href="css/basic.css">
+	</head>
+	<body background="img/search5.jpg">
+		<header>
+			<nav id="nav">
+			<div id="logo"><img src="img/logo.png" alt=""></div> 
+			
+			<span id="lonad">
+			    <span class="lonad"><a href="user-login.html"><b>登录 注册</b></a></span>
+			</span>
+			
+			<ul>
+				<li><a href="index.html">首页</a></li>
+				<li><a href="informations.html">旅游资讯</a></li>
+				<li><a href="ticket.html">机票订购</a></li>
+				<li><a href="about.html">酒店查询</a></li>
+				<li ><a href="scenery.html">美食鉴赏</a></li>
+				
+				<li ><a href="buy.html">我的订单</a></li>
+			</ul>
+		
+			
+		
+			</nav>
+			
+		</header>
+		<div>
+			<span id="huanying">山西欢迎您！</span>
+			<table>
+				<tr>
+					<td>
+						<img id="img" src="img/number1.jpg" width="100%">
+						<script>
+							// 修改图片src属性
+							var number = 1;
+							function fun() {
+								number++;
+								if (number > 9) {
+									number = 1;
+								}
+								var img = document.getElementById("img");
+								img.src = "img/number" + number + ".jpg"
+							}
+							// 定义定时器
+							setInterval(fun, 3000);
+						</script>
+					</td>
+					<td>
+						<video src="img/shipin.mp4" controls="controls" poster="img/video.jpg"></video>
+					</td>
+				</tr>
+			</table>
+		</div>
+<footer id="footer">
+	<div class="top">
+	<div class="block left">
+	<h3>合作伙伴</h3>
+	<hr>
+	<ul>
+		<li style=" color: #5F7075;">途牛旅游网</li>
+		<li style=" color: #5F7075;">去哪儿旅行网</li>
+		<li style=" color: #5F7075;">携程旅游</li>
+		<li style=" color: #5F7075;">高德地图</li>
+	</ul>
+
+	</div>
+	<div class="block middle">
+	<h3>旅游FAQ</h3>
+	<hr>
+	<ul>
+		<li><a href="https://baijiahao.baidu.com/s?id=1802998155565112554&wfr=spider&for=pc" style=" color: #5F7075;">山西旅游的最佳季节是什么时候</a></li>
+		<li><a href="https://baijiahao.baidu.com/s?id=1802998155565112554&wfr=spider&for=pc" style=" color: #5F7075;">山西有哪些必去的景点</a></li>
+		<li><a href="https://baijiahao.baidu.com/s?id=1806244929925303827&wfr=spider&for=pc" style=" color: #5F7075;">山西旅游注意事项</a></li>
+	</ul>
+	</div>
+	<div class="block right">
+	<h3>联系方式</h3>
+	<hr>
+	<ul>
+		<li style=" color: #5F7075;">微博：weibo.com/shanxilvyou</li>
+		<li style=" color: #5F7075;">邮件：2688889999@qq.com</li>
+		<li style=" color: #5F7075;">地址：山西省太原市尖草坪区</li>
+
+	</ul>
+	</div>
+	
+	</div>
+	<div class="bottom">Copyright © XUEHUA 山西旅游网| 晋ICP 备156759969 号| 旅行社经营许可证：L-14-12345</div>
+	</footer>
+	</body>
+</html>
